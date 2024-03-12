@@ -1,5 +1,5 @@
 <script lang="ts">
-    import SettingPanel from "./libs/setting-panel.svelte";
+    import SettingPanel from "@/libs/setting-panel.svelte";
 
     let groups: string[] = ["🌈 Default"];
     let focusGroup = groups[0];

@@ -1,4 +1,5 @@
 {
+    // "extends": "@tsconfig/svelte/tsconfig.json",
     "compilerOptions": {
         "target": "ESNext",
         "useDefineForClassFields": true,
@@ -36,7 +37,7 @@
             "vite/client",
             "svelte"
         ],
-        // "baseUrl": "./src",
+        "baseUrl": "./src",
         "paths": {
             "@/*": ["./src/*"],
             "@/libs/*": ["./src/libs/*"],

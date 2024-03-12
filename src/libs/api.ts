@@ -8,6 +8,18 @@
 
 import { fetchSyncPost, IWebSocketData } from "siyuan";
 
+export async function copy(text){
+    await navigator.clipboard.writeText(text)
+}
+
+export function canParse(parseObj){
+    try{
+        JSON.parse(parseObj);
+    } catch(error){
+        return false;
+    }
+    return true;
+}
 
 export async function request(url: string, data: any) {
     let response: IWebSocketData = await fetchSyncPost(url, data);

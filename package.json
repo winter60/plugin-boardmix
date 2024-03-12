@@ -1,8 +1,8 @@
 {
-  "name": "plugin-sample-vite-svelte",
+  "name": "plugin-boardmix",
   "version": "0.3.2",
   "type": "module",
-  "description": "This is a sample plugin based on vite and svelte for Siyuan (https://b3log.org/siyuan)",
+  "description": "",
   "repository": "",
   "homepage": "",
   "author": "",
@@ -10,6 +10,7 @@
   "scripts": {
     "make-link": "node  --no-warnings ./scripts/make_dev_link.js",
     "dev": "vite build --watch",
+    "tag": "git add ./plugin.json && git commit -m \"update version\"  && git push && node ./autoTag.js",
     "build": "vite build"
   },
   "devDependencies": {
@@ -29,5 +30,8 @@
     "vite": "^4.5.2",
     "vite-plugin-static-copy": "^0.15.0",
     "vite-plugin-zip-pack": "^1.0.5"
+  },
+  "dependencies": {
+    "siyuan-kit-svelte": "^0.1.3"
   }
 }
